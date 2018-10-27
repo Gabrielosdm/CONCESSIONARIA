@@ -7,3 +7,5 @@ class Control:
         self.view.exibir_menu()
     def get_lista_compras(self):
         return self.model.get_lista_compras()
+
+

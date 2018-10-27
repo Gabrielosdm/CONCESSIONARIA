@@ -1,3 +1,6 @@
+from MVC import control
+from MVC import model
+
 class View:
     def __init__(self):
         self.control = None
@@ -28,5 +31,8 @@ class View:
                 print('\n Valor incorreto')
     #exibir lista de compras
     def exibir_lista_compras(self,lista_compras):
-        for chave,valor in lista_compras.items:
-            print(f'-{chave}:{valor}')
+        self.lista_compras = lista_compras
+        est = open('estoque', 'r')
+        lista = est.read()
+        est.close()
+        print(lista)
